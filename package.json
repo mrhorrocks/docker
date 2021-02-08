@@ -1,0 +1,19 @@
+{
+  "name": "dockertests",
+  "version": "1.0.0",
+  "description": "Basic Docker Config",
+  "main": "index.html",
+  "scripts": {
+    "test": "run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrhorrocks/docker.git"
+  },
+  "author": "mrhorrocks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrhorrocks/docker/issues"
+  },
+  "homepage": "https://github.com/mrhorrocks/docker#readme"
+}
