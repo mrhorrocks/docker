@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>From The html Directory</title>
+    <title>PHP TEST</title>
 </head>
+
 <body>
-    HTML 1<br />
-    <a href="test.php">PHP TEST</a>
+    <?php phpinfo(); ?>
 </body>
+
 </html>
