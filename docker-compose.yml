@@ -1,0 +1,28 @@
+web:
+  container_name: nginx-horrocks
+  image: nginx:latest
+  ports:
+    - "8080:80"
+  volumes: 
+      - ./html:/usr/share/nginx/html
+  links:
+    - php
+
+php:
+  container_name: php7-fpm-horrocks
+  image: bitnami/php-fpm:latest
+  # volumes:
+  #   - ./htdocs:/var/www/vhosts/dashboards-api:delegated
+  #   - ./cache.ini:/opt/bitnami/php/etc/conf.d/cache.ini:cached
+  links: 
+    - db
+
+db:
+  container_name: mysql-5point7-horrocks
+  image: mysql:5.7
+  restart: always
+  environment:
+      # MYSQL_DATABASE: dashboards_api
+      MYSQL_ROOT_PASSWORD: root
+  ports:
+    - "3306:3306"
